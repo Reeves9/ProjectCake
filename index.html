@@ -1,108 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Rowdy Cakes</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-    </style>
-</head>
-<body>
-        <ul>
-            <li><a class = "active"href="index.html">Home</a></li>
-            <li><a href="flowers.html">Flowers</a></li>
-            <li><a href="gifts.html">Gifts</a></li>
-            <li><a href="service.html">Customer Service</a></li>
-        </ul>
-    
-    
-       <div class ="card">
-            <div class="container">
-                <div class = "sidenav">
-                    <img src="/Assets/Pictures/cake.jpg" alt="Icon">
-                    <a href="">Choclate</a>
-                    <a href="">Vanilla</a>
-                    <a href="">Strawberry</a>
-                    <a href="">Misselanious</a>
-                </div> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Shop</title>
+    <style>
+      /* ... (previous CSS styles) ... */
 
+      .watch-card {
+        /* ... (previous styles) ... */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .watch-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ... (previous HTML content) ... -->
+    <body>
+        <header>
+            <h1>Watch Shop</h1>
+        </header>
+    
+        <nav>
+            <a href="#">All Watches</a>
+            <a href="#">Men's Watches</a>
+            <a href="#">Women's Watches</a>
+            <a href="#">Smart Watches</a>
+            <a href="#">Luxury Watches</a>
+        </nav>
+    
+        <div class="main-content">
+            <div class="watch-card">
+                <h2>Watch 1</h2>
+                <p>Price: $100</p>
+                <p>Stock: 10</p>
             </div>
-       </div>
-        <div class="outcontain1">
-            <div class = "outcontain">
-            <div class = "card" >
-                <a href="/Assets/Pictures/c-cake.jpg"><img src="/Assets/Pictures/c-cake.jpg" alt="Cake"></a>
-                    <div class = "container">
-                        <h4>Choclate Cake</h4>
-                        <p>Rs.1000</p>
-                    </div>
-                    </div>
+    
+            <div class="watch-card">
+                <h2>Watch 2</h2>
+                <p>Price: $150</p>
+                <p>Stock: 15</p>
             </div>
-          <div class = "outcontain">
-            <div class = "card" >
-                <a href="/Assets/Pictures/v-cake.jpg"><img src="/Assets/Pictures/v-cake.jpg" alt="Cake"></a>
-                <div class = "container">
-                    <h4>Vanilla Cake</h4>
-                    <p>Rs.1000</p>
-                </div>
+    
+            <div class="watch-card">
+                <h2>Watch 3</h2>
+                <p>Price: $200</p>
+                <p>Stock: 5</p>
             </div>
-            </div>
-            <div class = "outcontain">
-                <div class = "card" >
-                    <a href="/Assets/Pictures/b-cake.jpg"><img src="/Assets/Pictures/b-cake.jpg" alt="Cake"></a>
-                        <div class = "container">
-                            <h4>Banana Cake</h4>
-                            <p>Rs.1200</p>
-                        </div>
-                        </div>
-                </div>
-              <div class = "outcontain">
-                <div class = "card" >
-                    <a href="/Assets/Pictures/strawberry-cake.jpg"><img src="/Assets/Pictures/strawberry-cake.jpg" alt="Cake"></a>
-                    <div class = "container">
-                        <h4>Strawberry Cake</h4>
-                        <p>Rs.1200</p>
-                    </div>
-                </div>
-                </div>
-            </div><br>
-       <div class="outcontain1">
-        <div class = "outcontain">
-        <div class = "card" >
-            <a href="/Assets/Pictures/b-cake.jpg"><img src="/Assets/Pictures/bday.jpg" alt="Cake"></a>
-                <div class = "container">
-                    <h4>Birthday Cake</h4>
-                    <p>Rs.700</p>
-                </div>
-                </div>
+            <!-- Add more watch cards as needed -->
         </div>
-      <div class = "outcontain">
-        <div class = "card" >
-            <a href="/Assets/Pictures/choclate-pastry.jpg"><img src="/Assets/Pictures/choclate-pastry.jpg" alt="Cake"></a>
-            <div class = "container">
-                <h4>Choclate Pastry</h4>
-                <p>Rs.150</p>
-            </div>
-        </div>
-        </div>
-        <div class = "outcontain">
-            <div class = "card" >
-                <a href="/Assets/Pictures/wedding-cake.jpg"><img src="/Assets/Pictures/wedding-cake.jpg" alt="Cake"></a>
-                    <div class = "container">
-                        <h4>Wedding Cake</h4>
-                        <p>Rs.4000</p>
-                    </div>
-                    </div>
-            </div>
-          <div class = "outcontain">
-            <div class = "card" >
-                <a href="/Assets/Pictures/sprinkle-cake.jpg"><img src="/Assets/Pictures/sprinkle-cake.jpg" alt="Cake"></a>
-                <div class = "container">
-                    <h4>Sprinkle Cake</h4>
-                    <p>Rs.1300</p>
-                </div>
-            </div>
-            </div>
-        </div><br>
-        
-      
-</body>
+    <script>
+      // JavaScript for transitions
+      const watchCards = document.querySelectorAll(".watch-card");
+
+      watchCards.forEach((card) => {
+        card.addEventListener("mouseover", () => {
+          card.style.transform = "scale(1.05)";
+          card.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
+        });
+
+        card.addEventListener("mouseout", () => {
+          card.style.transform = "scale(1)";
+          card.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+        });
+      });
+    </script>
+  </body>
 </html>
