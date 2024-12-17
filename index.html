@@ -3,68 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Watch Shop</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>My Resume</title>
+    <style>
+      :root {
+        --nord0: #2e3440;
+        --nord1: #3b4252;
+        --nord2: #434c5e;
+        --nord3: #4c566a;
+        --nord4: #d8dee9;
+        --nord7: #8fbcbb;
+        --nord8: #88c0d0;
+        --nord9: #81a1c1;
+      }
+
+      body {
+        background-color: var(--nord0);
+        color: var(--nord4);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .card {
+        background-color: var(--nord1);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        object-fit: cover;
+        border: 4px solid var(--nord8);
+      }
+
+      h1,
+      h2 {
+        color: var(--nord8);
+        margin-bottom: 15px;
+      }
+
+      .section-title {
+        border-bottom: 2px solid var(--nord9);
+        padding-bottom: 5px;
+      }
+
+      .experience-item,
+      .education-item {
+        margin-bottom: 15px;
+      }
+
+      .date {
+        color: var(--nord7);
+        font-size: 0.9em;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Watch Shop</h1>
-    </header>
-
     <div class="container">
-        <nav>
-            <a href="#">All Watches</a>
-            <a href="#">Men's Watches</a>
-            <a href="#">Women's Watches</a>
-            <a href="#">Smart Watches</a>
-            <a href="#">Luxury Watches</a>
-        </nav>
-
-    <div class="main-content">
-      <div class="watch-card">
-        <img src="Assets/watch1.jpeg" alt="Watch 1" />
-        <h2>Watch 1</h2>
-        <p>Price: $100</p>
-        <p>Stock: 10</p>
+      <div class="card profile">
+        <img src="your-photo.jpg" alt="Profile Picture" class="profile-img" />
+        <div>
+          <h1>Your Name</h1>
+          <p>Professional Title</p>
+          <p>
+            A passionate professional with expertise in your field. Brief
+            introduction about yourself and your career objectives.
+          </p>
+        </div>
       </div>
 
-      <div class="watch-card">
-        <img src="Assets/watch2.jpeg" alt="Watch 2" />
-        <h2>Watch 2</h2>
-        <p>Price: $150</p>
-        <p>Stock: 15</p>
+      <div class="card">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-item">
+          <h3>Job Title</h3>
+          <div class="date">Company Name | 2020 - Present</div>
+          <p>
+            Description of your responsibilities and achievements in this role.
+            Highlight key accomplishments and skills utilized.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Previous Job Title</h3>
+          <div class="date">Previous Company | 2018 - 2020</div>
+          <p>
+            Description of your responsibilities and achievements in this role.
+            Highlight key accomplishments and skills utilized.
+          </p>
+        </div>
       </div>
 
-      <div class="watch-card">
-        <img src="Assets/watch3.jpeg" alt="Watch 3" />
-        <h2>Watch 3</h2>
-        <p>Price: $200</p>
-        <p>Stock: 5</p>
+      <div class="card">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <h3>Degree Name</h3>
+          <div class="date">University Name | 2014 - 2018</div>
+          <p>
+            Description of your major, relevant coursework, and academic
+            achievements.
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>High School Diploma</h3>
+          <div class="date">School Name | 2010 - 2014</div>
+          <p>Brief description of your academic achievements and activities.</p>
+        </div>
       </div>
 
-      <!-- Add more watch cards as needed -->
-      <div class="watch-card">
-        <img src="Assets/watch4.jpeg" alt="Watch 4" />
-        <h2>Watch 4</h2>
-        <p>Price: $120</p>
-        <p>Stock: 8</p>
-      </div>
-
-      <div class="watch-card">
-        <img src="Assets/watch5.jpeg" alt="Watch 5" />
-        <h2>Watch 5</h2>
-        <p>Price: $180</p>
-        <p>Stock: 12</p>
-      </div>
-
-      <div class="watch-card">
-        <img src="Assets/watch6.jpeg" alt="Watch 6" />
-        <h2>Watch 6</h2>
-        <p>Price: $220</p>
-        <p>Stock: 3</p>
+      <div class="card">
+        <h2 class="section-title">Skills</h2>
+        <p>Skill 1 • Skill 2 • Skill 3 • Skill 4 • Skill 5 • Skill 6</p>
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
