@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Resume</title>
+    <title>George Dozier Jr. - CV</title>
     <style>
       :root {
         --nord0: #2e3440;
@@ -17,120 +17,167 @@
       }
 
       body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background-color: var(--nord0);
         color: var(--nord4);
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
-        padding: 20px;
+        padding: 0;
       }
 
       .container {
+        display: flex;
         max-width: 1000px;
-        margin: 0 auto;
-      }
-
-      .card {
+        margin: 20px auto;
         background-color: var(--nord1);
         border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Left Sidebar */
+      .sidebar {
+        background-color: var(--nord2);
+        color: var(--nord4);
+        width: 30%;
         padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px 0 0 10px;
       }
 
-      .profile {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+      .sidebar h2 {
+        color: var(--nord8);
+        margin-bottom: 10px;
       }
 
-      .profile-img {
-        width: 200px;
-        height: 200px;
+      .profile-pic {
+        width: 100px;
+        height: 100px;
         border-radius: 20px;
-        object-fit: cover;
         border: 4px solid var(--nord8);
+        margin-bottom: 20px;
       }
 
-      h1,
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .contact p,
+      .skills p {
+        margin: 5px 0;
+      }
+
+      .icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .icons img {
+        width: 25px;
+        height: 25px;
+        filter: invert(75%);
+      }
+
+      /* Right Section */
+      .content {
+        padding: 30px;
+        width: 70%;
+      }
+
+      h1 {
+        color: var(--nord8);
+        font-size: 2em;
+        margin-bottom: 5px;
+      }
+
       h2 {
         color: var(--nord8);
-        margin-bottom: 15px;
-      }
-
-      .section-title {
         border-bottom: 2px solid var(--nord9);
+        margin-bottom: 10px;
         padding-bottom: 5px;
       }
 
-      .experience-item,
-      .education-item {
+      .about p,
+      .work p,
+      .education p {
+        line-height: 1.6;
         margin-bottom: 15px;
       }
 
       .date {
-        color: var(--nord7);
         font-size: 0.9em;
+        color: var(--nord7);
       }
 
-      p {
-        line-height: 1.6;
+      .work-item,
+      .edu-item {
+        margin-bottom: 20px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="card profile">
-        <img src="your-photo.jpg" alt="Profile Picture" class="profile-img" />
-        <div>
-          <h1>Your Name</h1>
-          <p>Professional Title</p>
-          <p>
-            A passionate professional with expertise in your field. Brief
-            introduction about yourself and your career objectives.
-          </p>
+      <!-- Left Sidebar -->
+      <div class="sidebar">
+        <img src="IMG_2849.jpg" alt="Profile Picture" class="profile-pic" />
+        <div class="section contact">
+          <h2>Contact</h2>
+          <p>Panitanki , Dhulikel-9<br />Kavre , Bagmati</p>
+          <p>+977 9840038684</p>
+          <p>reeshav.mainali1990@gmail.com</p>
+          <p>reeshavmainali.com.np</p>
+        </div>
+
+        <div class="section skills">
+          <h2>Skills</h2>
+          <p>Programming/Application</p>
+          <p>Development Management</p>
+          <p>Web Development</p>
+        </div>
+
+        <div class="section hobbies">
+          <h2>Hobbies</h2>
+          <div class="icons">
+            <img src="icon1.png" alt="Hobby 1" />
+            <img src="icon2.png" alt="Hobby 2" />
+            <img src="icon3.png" alt="Hobby 3" />
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-item">
-          <h3>Job Title</h3>
-          <div class="date">Company Name | 2020 - Present</div>
+      <!-- Right Content -->
+      <div class="content">
+        <div class="about">
+          <h1>Reeshav Mainali</h1>
+          <p>Full Stack Developer</p>
           <p>
-            Description of your responsibilities and achievements in this role.
-            Highlight key accomplishments and skills utilized.
+            I am a full stack developer with a passion for creating, and
+            colaboration.
           </p>
         </div>
-        <div class="experience-item">
-          <h3>Previous Job Title</h3>
-          <div class="date">Previous Company | 2018 - 2020</div>
-          <p>
-            Description of your responsibilities and achievements in this role.
-            Highlight key accomplishments and skills utilized.
-          </p>
-        </div>
-      </div>
 
-      <div class="card">
-        <h2 class="section-title">Education</h2>
-        <div class="education-item">
-          <h3>Degree Name</h3>
-          <div class="date">University Name | 2014 - 2018</div>
-          <p>
-            Description of your major, relevant coursework, and academic
-            achievements.
-          </p>
+        <div class="education">
+          <h2>Education</h2>
+          <div class="edu-item">
+            <h3>10 +2 in Science and Mathematics</h3>
+            <div class="date">Hetauda School of Management | 2020 - 2021</div>
+          </div>
+          <div class="edu-item">
+            <h3>BSc.CSIT</h3>
+            <div class="date">NIST college, Banepa | 2022 - 2026</div>
+          </div>
+          <div class="edu-item">
+            <h3>Hardware Technician</h3>
+            <div class="date">Leap Frog | 2022 - 2023</div>
+          </div>
         </div>
-        <div class="education-item">
-          <h3>High School Diploma</h3>
-          <div class="date">School Name | 2010 - 2014</div>
-          <p>Brief description of your academic achievements and activities.</p>
-        </div>
-      </div>
 
-      <div class="card">
-        <h2 class="section-title">Skills</h2>
-        <p>Skill 1 • Skill 2 • Skill 3 • Skill 4 • Skill 5 • Skill 6</p>
+        <div class="work">
+          <h2>Work Experience</h2>
+          <div class="work-item">
+            <h3>Computer Teacher</h3>
+            <div class="date">Baylor International School | Present</div>
+            <p>I am working as a teacher in Computer subject.</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
