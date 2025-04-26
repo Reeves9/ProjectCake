@@ -1,185 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reeshav Mainali - CV</title>
-    <style>
-      :root {
-        --nord0: #2e3440;
-        --nord1: #3b4252;
-        --nord2: #434c5e;
-        --nord3: #4c566a;
-        --nord4: #d8dee9;
-        --nord7: #8fbcbb;
-        --nord8: #88c0d0;
-        --nord9: #81a1c1;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reeshav Mainali - Backend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#121212',
+            surface: '#1E1E1E',
+            primary: '#BB86FC',
+            secondary: '#03DAC6',
+            text: '#E0E0E0',
+            secondaryText: '#B0B0B0'
+          }
+        }
       }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: var(--nord0);
-        color: var(--nord4);
-        margin: 0;
-        padding: 0;
-      }
+<body class="bg-background text-text font-sans">
 
-      .container {
-        display: flex;
-        max-width: 90%;
-        height: 90%;
-        margin: 20px auto;
-        background-color: var(--nord1);
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      }
-
-      /* Left Sidebar */
-      .sidebar {
-        background-color: var(--nord2);
-        color: var(--nord4);
-        width: 30%;
-        padding: 20px;
-        border-radius: 10px 0 0 10px;
-      }
-
-      .sidebar h2 {
-        color: var(--nord8);
-        margin-bottom: 10px;
-      }
-
-      .profile-pic {
-        width: 300px;
-        height: 200px;
-        border-radius: 20px;
-        border: 4px solid var(--nord8);
-        margin-bottom: 20px;
-      }
-
-      .section {
-        margin-bottom: 20px;
-      }
-
-      .contact p,
-      .skills p {
-        margin: 5px 0;
-      }
-
-      .icons {
-        display: flex;
-        gap: 15px;
-        margin-top: 15px;
-      }
-
-      .icons img {
-        width: 25px;
-        height: 25px;
-        filter: invert(75%);
-      }
-
-      /* Right Section */
-      .content {
-        padding: 30px;
-        width: 70%;
-      }
-
-      h1 {
-        color: var(--nord8);
-        font-size: 2em;
-        margin-bottom: 5px;
-      }
-
-      h2 {
-        color: var(--nord8);
-        border-bottom: 2px solid var(--nord9);
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-      }
-
-      .about p,
-      .work p,
-      .education p {
-        line-height: 1.6;
-        margin-bottom: 15px;
-      }
-
-      .date {
-        font-size: 0.9em;
-        color: var(--nord7);
-      }
-
-      .work-item,
-      .edu-item {
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <!-- Left Sidebar -->
-      <div class="sidebar">
-        <img src="IMG_2849.jpg" alt="Profile Picture" class="profile-pic" />
-        <div class="section contact">
-          <h2>Contact</h2>
-          <p>Panitanki , Dhulikel-9<br />Kavre , Bagmati</p>
-          <p>+977 9840038684</p>
-          <p>reeshav.mainali1990@gmail.com</p>
-          <p>reeshavmainali.com.np</p>
-        </div>
-
-        <div class="section skills">
-          <h2>Skills</h2>
-          <p>Programming/Application</p>
-          <p>Development Management</p>
-          <p>Web Development</p>
-        </div>
-
-        <div class="section hobbies">
-          <h2>Hobbies</h2>
-          <div class="icons">
-            <img src="icon1.png" alt="Hobby 1" />
-            <img src="icon2.png" alt="Hobby 2" />
-            <img src="icon3.png" alt="Hobby 3" />
-          </div>
-        </div>
+  <!-- Header -->
+  <section class="bg-surface shadow-md" data-aos="fade-down">
+    <div class="max-w-6xl mx-auto p-6 flex flex-col md:flex-row md:justify-between items-center transition duration-500">
+      <div class="text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight">Reeshav Mainali</h1>
+        <p class="mt-2 text-lg text-primary font-semibold">Backend Developer</p>
       </div>
-
-      <!-- Right Content -->
-      <div class="content">
-        <div class="about">
-          <h1>Reeshav Mainali</h1>
-          <p>Full Stack Developer</p>
-          <p>
-            I am a full stack developer with a passion for creating, and
-            colaboration.
-          </p>
-        </div>
-
-        <div class="education">
-          <h2>Education</h2>
-          <div class="edu-item">
-            <h3>10 +2 in Science and Mathematics</h3>
-            <div class="date">Hetauda School of Management | 2020 - 2021</div>
-          </div>
-          <div class="edu-item">
-            <h3>BSc.CSIT</h3>
-            <div class="date">NIST college, Banepa | 2022 - 2026</div>
-          </div>
-          <div class="edu-item">
-            <h3>Hardware Technician</h3>
-            <div class="date">Leap Frog | 2022 - 2023</div>
-          </div>
-        </div>
-
-        <div class="work">
-          <h2>Work Experience</h2>
-          <div class="work-item">
-            <h3>Computer Teacher</h3>
-            <div class="date">Baylor International School | Present</div>
-            <p>I am working as a teacher in Computer subject.</p>
-          </div>
-        </div>
+      <div class="mt-4 md:mt-0 text-center md:text-right text-sm space-y-1">
+        <p class="flex items-center justify-left md:justify-end space-x-2 hover:text-primary transition"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> +977 9840038684</p>
+        <p class="flex items-center justify-left md:justify-end space-x-2 hover:text-primary transition"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg> reeshavmainali12@gmail.com</p>
+        <p class="flex items-center justify-left md:justify-end space-x-2 hover:text-primary transition"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z"/></svg> Dhulikhel-9, Kavre</p>
+        <p class="flex items-center justify-left md:justify-end space-x-2 hover:text-primary transition">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"/></svg> <a href="https://github.com/reeves9" target="_blank" class="hover:underline">GitHub Profile</a>
+        </p>
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- About -->
+  <section class="max-w-6xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4 text-primary">About Me</h2>
+    <p class="text-secondaryText leading-relaxed">
+      Highly motivated and quick-learning recent graduate with a strong foundation in Python and web development principles, seeking a Backend Django Developer position to contribute to innovative projects and expand my skills in building scalable and efficient server-side applications. Eager to apply my knowledge of Django framework, RESTful APIs, and database management to develop robust and maintainable solutions.
+    </p>
+  </section>
+
+  <!-- Education and Skills -->
+  <section class="bg-surface py-10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up" data-aos-delay="100">
+      
+      <!-- Education -->
+      <div class="hover:shadow-lg hover:scale-105 transform transition duration-500 rounded-xl p-4">
+        <h2 class="text-2xl font-bold mb-4 text-primary">Education</h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-semibold text-lg">Nist College, Banepa</h3>
+            <p class="text-sm text-secondaryText">BSc.CSIT (2078-2082)</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Hetauda School of Management</h3>
+            <p class="text-sm text-secondaryText">10+2 (2075-2078)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="hover:shadow-lg hover:scale-105 transform transition duration-500 rounded-xl p-4">
+        <h2 class="text-2xl font-bold mb-4 text-primary">Skills</h2>
+        <ul class="list-disc list-inside text-secondaryText space-y-2">
+          <li>Python Language</li>
+          <li>Django Framework</li>
+          <li>RESTful API</li>
+          <li>Data Manipulation & Processing</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section class="max-w-6xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4 text-primary">Work Experience</h2>
+    <div class="space-y-8">
+
+      <!-- Teacher -->
+      <div class="hover:shadow-md hover:bg-surface hover:scale-[1.02] p-4 rounded-xl transition duration-500">
+        <h3 class="font-semibold text-lg">Teacher - Baylor International Academy</h3>
+        <p class="text-secondaryText mt-1">
+          Taught both junior and senior students the subject of computer science to the fullest of their comprehension and promoted a friendly teacher-student relationship.
+        </p>
+      </div>
+
+      <!-- Personal Projects -->
+      <div class="hover:shadow-md hover:bg-surface hover:scale-[1.02] p-4 rounded-xl transition duration-500">
+        <h3 class="font-semibold text-lg">Personal Projects - GitHub</h3>
+        <p class="text-secondaryText mt-1">
+          Worked on multiple personal/pet projects which are available to be viewed on my GitHub.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-surface py-6 text-center text-sm text-secondaryText" data-aos="fade-up">
+    © 2025 Reeshav Mainali. All Rights Reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+
+</body>
 </html>
